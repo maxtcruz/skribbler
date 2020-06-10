@@ -55,7 +55,7 @@ class Skribbler:
         self.driver.quit()
         self.output.close()
 
-parser = argparse.ArgumentParser(description="select difficulty of words")
+parser = argparse.ArgumentParser(description="select difficulty & number of words")
 parser.add_argument("difficulty", choices=["easy", "medium", "hard", "harder"])
 parser.add_argument("-n", "--num_words", type=int, default=200, choices=range(4, 300))
 args = parser.parse_args()
